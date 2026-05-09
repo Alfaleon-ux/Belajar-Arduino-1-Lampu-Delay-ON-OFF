@@ -1,65 +1,64 @@
-🤖 Belajar-Arduino-1: Lampu Delay ON-OFF
-Selamat datang di proyek "Hello World" versi elektronika! Proyek ini adalah langkah pertama kamu untuk menguasai dunia otomasi menggunakan Arduino. Di sini, kita akan belajar cara mengontrol dunia fisik (lampu) hanya dengan beberapa baris kode.
+# 🤖 Belajar-Arduino-1: Lampu Delay ON-OFF
 
-"Teknologi itu nggak sihir, tapi rasanya mirip." — Mr. Duino 🧠✨
+[![GitHub issues](https://img.shields.io/github/issues/username/Belajar-Arduino-1-Lampu-Delay-ON-OFF)](https://github.com/username/Belajar-Arduino-1-Lampu-Delay-ON-OFF/issues)
+[![GitHub stars](https://img.shields.io/github/stars/username/Belajar-Arduino-1-Lampu-Delay-ON-OFF)](https://github.com/username/Belajar-Arduino-1-Lampu-Delay-ON-OFF/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-📺 Referensi Video
-Proyek ini merupakan pendamping untuk tutorial TikTok kami.
-Tonton Tutorialnya di TikTok @MrDuino
+Selamat datang ke projek **"Hello World"** versi elektronik! Projek ini adalah langkah pertama anda untuk menguasai dunia automasi menggunakan Arduino. Di sini, kita akan belajar cara mengawal dunia fizikal (lampu) hanya dengan beberapa baris kod.
 
-🛠️ Persiapan Alat & Bahan
-Untuk memulai eksperimen ini, kamu butuh "Starter Kit" dasar berikut:
+> "Teknologi itu bukan sihir, tapi rasanya mirip." — **Mr. Duino** 🧠✨
 
-Komponen	Jumlah	Fungsi
-Arduino Uno	1	Otak dari rangkaian
-LED (Warna bebas)	1	Output visual
-Resistor 220 Ohm	1	Pelindung LED agar tidak terbakar
-Breadboard	1	Papan untuk merakit tanpa solder
-Kabel Jumper	2	Penghubung aliran listrik
-📐 Skema Rangkaian
-Jangan sampai tertukar kakinya ya! LED punya kaki panjang (Anoda/+) dan kaki pendek (Katoda/-).
+---
 
-Kaki Panjang LED ➡️ Pin Digital 13 Arduino.
+## 📺 Rujukan Video
+Projek ini adalah rakan pendamping untuk tutorial TikTok kami. Sila tonton untuk penjelasan visual yang lebih mendalam!
+👉 [**Tonton Tutorial di TikTok @MrDuino**](https://www.tiktok.com/@mrduino_)
 
-Kaki Pendek LED ➡️ Salah satu kaki Resistor.
+---
 
-Kaki Resistor lainnya ➡️ Pin GND (Ground) Arduino.
+## 🛠️ Persediaan Alat & Bahan
 
-(Sematkan gambar schematic_arduino.png di sini)
+Untuk memulakan eksperimen ini, anda memerlukan "Starter Kit" asas berikut:
 
-💻 Kode Program (Sketch)
-Salin kode di bawah ini ke Arduino IDE kamu. Perhatikan bagian delay(), di situlah "sihir" waktunya terjadi!
+| Komponen | Jumlah | Fungsi |
+| :--- | :---: | :--- |
+| **Arduino Uno** | 1 | Otak utama rangkaian |
+| **LED (Warna Bebas)** | 1 | Output visual (Cahaya) |
+| **Resistor 220 Ohm** | 1 | Pelindung LED agar tidak terbakar |
+| **Breadboard** | 1 | Papan untuk merakit tanpa perlu pematerian (solder) |
+| **Kabel Jumper** | 2 | Penghubung aliran elektrik |
 
-C++
-// Proyek: Lampu Delay ON-OFF
-// Author: Mr. Duino
+---
+
+## 📐 Skema Rangkaian
+
+Pastikan kaki LED tidak tertukar! LED mempunyai kaki panjang (**Anod/+**) dan kaki pendek (**Katod/-**).
+
+1.  **Kaki Panjang LED** ➡️ Sambungkan ke **Pin Digital 13** Arduino.
+2.  **Kaki Pendek LED** ➡️ Sambungkan ke salah satu kaki **Resistor**.
+3.  **Kaki Resistor satu lagi** ➡️ Sambungkan ke pin **GND (Ground)** Arduino.
+
+![Skema Arduino](https://via.placeholder.com/600x400?text=Sematkan+Gambar+Skematik+Di+Sini)
+
+---
+
+## 💻 Kod Program (Sketch)
+
+Salin kod di bawah ke dalam Arduino IDE anda. Perhatikan fungsi `delay()`, di situlah "keajaiban" masa berlaku!
+
+```cpp
+// Projek: Lampu Delay ON-OFF
+// Penulis: Mr. Duino
 
 void setup() {
-  // Mengatur pin 13 sebagai OUTPUT
+  // Menetapkan pin 13 sebagai OUTPUT
   pinMode(13, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(13, HIGH);   // Nyalakan LED (Kirim listrik 5V)
-  delay(1000);              // Tunggu selama 1 detik (1000 ms)
+  digitalWrite(13, HIGH);   // Nyalakan LED (Hantar elektrik 5V)
+  delay(1000);              // Tunggu selama 1 saat (1000 ms)
   
-  digitalWrite(13, LOW);    // Matikan LED (Putus listrik)
-  delay(1000);              // Tunggu selama 1 detik
+  digitalWrite(13, LOW);    // Matikan LED (Putus aliran elektrik)
+  delay(1000);              // Tunggu selama 1 saat
 }
-🚀 Tantangan Eksperimen!
-Sudah berhasil? Jangan berhenti di situ! Coba lakukan modifikasi kecil ini untuk melihat apa yang terjadi:
-
-Mode Kilat: Ubah nilai delay(1000) menjadi delay(100). Apa yang terjadi pada kedipan lampunya?
-
-Mode SOS: Buat pola kedipan pendek-pendek-panjang.
-
-Custom Pin: Pindahkan kabel dari Pin 13 ke Pin 8, lalu ubah angka 13 di kode program menjadi 8.
-
-🤝 Kontribusi
-Punya ide proyek seru lainnya? Silakan lakukan Fork repositori ini atau ajukan Pull Request. Mari kita bangun komunitas kreator teknologi yang solid!
-
-📜 Lisensi
-Proyek ini di bawah lisensi MIT - bebas digunakan untuk belajar dan dikembangkan lebih lanjut.
-
-Dibuat dengan ❤️ oleh Mr. Duino
-Engineer rumahan, inovasi tanpa batas.
