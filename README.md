@@ -38,7 +38,7 @@ Pastikan kaki LED tidak tertukar! LED mempunyai kaki panjang (**Anod/+**) dan ka
 2.  **Kaki Pendek LED** ➡️ Sambungkan ke salah satu kaki **Resistor**.
 3.  **Kaki Resistor satu lagi** ➡️ Sambungkan ke pin **GND (Ground)** Arduino.
 
-![Skema Arduino](https://via.placeholder.com/600x400?text=Sematkan+Gambar+Skematik+Di+Sini)
+![Skema Arduino](<img width="1740" height="1381" alt="SCH_LED" src="https://github.com/user-attachments/assets/bbf566e1-075d-4548-8d3e-c09ad6ea99b8" />)
 
 ---
 
